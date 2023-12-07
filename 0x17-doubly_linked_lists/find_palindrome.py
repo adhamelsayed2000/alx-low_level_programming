@@ -1,4 +1,4 @@
-#!/user/bin/python3
+#!/usr/bin/python3
 def is_palindrome(n):
     return str(n) == str(n)[::-1]
 
@@ -10,6 +10,7 @@ for i in range(100, 1000):
         if is_palindrome(product) and product > largest_palindrome:
             largest_palindrome = product
 
-# Save the result in the file
-with open('102-result', 'w') as file:
+# Save the result in the specified file
+with open('alx-low_level_programming/0x17-doubly_linked_lists/102-result', 'w') as file:
     file.write(str(largest_palindrome))
+
